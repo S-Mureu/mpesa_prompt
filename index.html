@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>M-Pesa Payment Prompt</title>
+
+</head>
+<body>
+    <h1>Pay with M-Pesa</h1>
+    <p>Enter your details to proceed with the M-Pesa payment</p>
+    
+    <!-- Form to collect details -->
+    <label for="countryCode">Country Code (e.g., +254 for Kenya):</label>
+    <input type="text" id="countryCode" placeholder="+254">
+    
+    <label for="phoneNumber">Phone Number (M-Pesa registered number):</label>
+    <input type="text" id="phoneNumber" placeholder="Phone number">
+    
+    <label for="amount">Amount to pay:</label>
+    <input type="text" id="amount" placeholder="Amount">
+    
+    
+
+    <button onclick="initiatePayment()">Proceed with Payment</button>
+
+    <div class="message" id="paymentMessage"></div>
+    <script src="script.js"></script>
+</body>
+</html>
